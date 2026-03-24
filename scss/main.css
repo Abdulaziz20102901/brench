@@ -1,1 +1,43 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+nav .container ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+nav .container ul li {
+  font-size: 18px;
+  font-weight: 400px;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .container .hero_info {
+  width: 500px;
+}
+.hero .container .hero_img {
+  width: 400px;
+}
+.hero .container .hero_img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=main.css.map */

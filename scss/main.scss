@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+nav {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      li {
+        font-size: 18px;
+        font-weight: 400px;
+      }
+    }
+  }
+}
+
+.hero {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+.hero_info{
+    width: 500px;
+}
+
+    .hero_img {
+      width: 400px;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
