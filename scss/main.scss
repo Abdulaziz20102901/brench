@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -14,15 +17,94 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 25px 0px;
+    border-bottom: 1px solid #393939;
+
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #393939;
+    }
 
     ul {
       display: flex;
       align-items: center;
-      gap: 40px;
+      gap: 50px;
+      list-style: none;
       li {
-        font-size: 18px;
-        font-weight: 400px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #393939;
+        transition: all 0.3s ease;
+        position: relative;
+        &:hover {
+          transform: translateY(-5px);
+          cursor: pointer;
+          color: #ff922f;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          width: 0px;
+          height: 2px;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: all 0.3s ease;
+          background-color: #ff922f;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+
+    .nav_button {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .button_1 {
+        button {
+          padding: 8px 25px;
+          background-color: #407f55;
+          border: none;
+          border-top: 1px solid #407f55;
+          border-bottom: 1px solid #407f55;
+          border-radius: 10px;
+          color: white;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: translateY(-5px);
+            background-color: transparent;
+            color: #407f55;
+          }
+          &:active {
+            transform: scale(0.9);
+          }
+        }
+      }
+
+      .button_2 {
+        button {
+          padding: 8px 25px;
+          background-color: #fb9c46;
+          border: none;
+          border-top: 1px solid #fb9c46;
+          border-bottom: 1px solid #fb9c46;
+          border-radius: 10px;
+          color: white;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: translateY(-5px);
+            background-color: transparent;
+            color: #fb9c46;
+          }
+          &:active {
+            transform: scale(0.9);
+          }
+        }
       }
     }
   }
@@ -33,23 +115,56 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-.hero_info{
-    width: 500px;
-}
+    padding: 50px 0px;
+    .hero_info {
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #fb9c46;
+      }
 
-    .hero_img {
-      width: 400px;
-      img {
-        width: 100%;
-        object-fit: cover;
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        width: 550px;
+        padding: 30px 0px;
+        & :nth-child(1) {
+          color: #fb9c46;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        font-size: 400;
+        caret-color: #6c6c6c;
+        width: 550px;
+        margin-bottom: 30px;
+      }
+
+      button {
+        padding: 10px 40px;
+        background-color: #058e6e;
+        border: none;
+        border-top: 1px solid #058e6e;
+        border-bottom: 1px solid #058e6e;
+        border-radius: 10px;
+        color: white;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: translateY(-5px);
+          background-color: transparent;
+          cursor: pointer;
+          color: #058e6e;
+        }
+        &:active {
+          transform: scale(0.9);
+        }
       }
     }
-  }
-}
 
-section{
-    .container{
-        background-color: red;
-        margin-bottom: 50px;
+    .hero_img {
+      background-color: #f9a548;
+      border-radius: 130px;
     }
+  }
 }
