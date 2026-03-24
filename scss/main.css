@@ -40,4 +40,9 @@ nav .container ul li {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+section .container {
+  background-color: red;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */
