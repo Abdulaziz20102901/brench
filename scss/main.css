@@ -114,36 +114,13 @@ nav .container .nav_button .button_2 button:active {
   width: 550px;
   padding: 30px 0px;
 }
-.hero .container .hero_info h1 :nth-child(1) {
-  color: #fb9c46;
+.hero .container .hero_img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.hero .container .hero_info p {
-  font-size: 18px;
-  font-size: 400;
-  caret-color: #6c6c6c;
-  width: 550px;
-  margin-bottom: 30px;
-}
-.hero .container .hero_info button {
-  padding: 10px 40px;
-  background-color: #058e6e;
-  border: none;
-  border-top: 1px solid #058e6e;
-  border-bottom: 1px solid #058e6e;
-  border-radius: 10px;
-  color: white;
-  transition: all 0.3s ease;
-}
-.hero .container .hero_info button:hover {
-  transform: translateY(-5px);
-  background-color: transparent;
-  cursor: pointer;
-  color: #058e6e;
-}
-.hero .container .hero_info button:active {
-  transform: scale(0.9);
-}
-.hero .container .hero_img {
-  background-color: #f9a548;
-  border-radius: 130px;
+
+section .container {
+  background-color: red;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */
