@@ -117,7 +117,7 @@ nav {
     justify-content: space-between;
     padding: 50px 0px;
     .hero_info {
-        position: relative;
+      position: relative;
       h3 {
         font-size: 16px;
         font-weight: 600;
@@ -166,6 +166,264 @@ nav {
     .hero_img {
       background-color: #f9a548;
       border-radius: 130px;
+    }
+  }
+}
+
+.offer {
+  .container {
+    text-align: center;
+    margin-top: 80px;
+    .offer_text {
+      h2 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #fb9c46;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 48px;
+        font-weight: 600;
+        color: #393939;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fb9c46;
+      }
+    }
+
+    .offer_logo {
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #6c6c6c;
+        width: 650px;
+        margin: 0px auto;
+        margin-top: 20px;
+      }
+      .offer_logo_img {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 100px;
+        padding-top: 35px;
+        width: 920px;
+        margin: 0px auto;
+        margin-top: 30px;
+        img {
+          transition: all 0.3s ease;
+          &:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+          }
+          &:active {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  nav {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px 0px;
+      border-bottom: 1px solid #393939;
+
+      h1 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #393939;
+      }
+
+      .bars {
+        i {
+          display: block;
+          font-size: 20px;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: translateY(-5px);
+            color: #fb9c46;
+            cursor: pointer;
+          }
+          &:active {
+            transform: scale(0.9);
+          }
+        }
+      }
+
+      .Tutorify_title {
+        display: none;
+        align-items: center;
+        gap: 30px;
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          list-style: none;
+          li {
+            font-size: 16px;
+            font-weight: 600;
+            color: #393939;
+            transition: all 0.3s ease;
+            position: relative;
+            &:hover {
+              transform: translateY(-5px);
+              color: #ff922f;
+              cursor: pointer;
+            }
+            &:active {
+              transform: scale(0.9);
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -5px;
+              width: 0px;
+              left: 50%;
+              height: 2px;
+              transform: translateX(-50%);
+              transition: all 0.3s ease;
+              background-color: #ff922f;
+            }
+
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+
+        .Tutorify_button_1 {
+          button {
+            padding: 5px 20px;
+            background-color: #407f55;
+            border: none;
+            border-top: 1px solid #407f55;
+            border-bottom: 1px solid #407f55;
+            border-radius: 10px;
+            color: white;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            &:hover {
+              transform: translateY(-5px);
+              background-color: transparent;
+              color: #407f55;
+              cursor: pointer;
+            }
+            &:active {
+              transform: scale(0.9);
+            }
+          }
+        }
+
+        .Tutorify_button_2 {
+          button {
+            padding: 5px 20px;
+            background-color: #fb9c46;
+            border: none;
+            border-top: 1px solid #fb9c46;
+            border-bottom: 1px solid #fb9c46;
+            border-radius: 10px;
+            color: white;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            &:hover {
+              transform: translateY(-5px);
+              background-color: transparent;
+              color: #fb9c46;
+              cursor: pointer;
+            }
+            &:active {
+              transform: scale(0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hero {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      .hero_info {
+        h3 {
+          width: 100%;
+          font-size: 12px;
+          font-weight: 600;
+          color: #fb9c46;
+          letter-spacing: 1px;
+          margin-bottom: 20px;
+        }
+
+        h1 {
+          font-size: 25px;
+          font-weight: 700;
+          color: #000000;
+          width: 100%;
+          margin-bottom: 20px;
+          & :nth-child(1) {
+            color: #fb9c46;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          color: #6c6c6c;
+          width: 100%;
+          margin-bottom: 30px;
+        }
+
+        button {
+          width: 100%;
+          padding: 10px 40px;
+          background-color: #058e6e;
+          border: none;
+          border-top: 1px solid #058e6e;
+          border-bottom: 1px solid #058e6e;
+          color: white;
+          font-weight: 700;
+          letter-spacing: 1px;
+          border-radius: 10px;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: translateY(-5px);
+            background-color: transparent;
+            color: #058e6e;
+            cursor: pointer;
+          }
+          &:active {
+            transform: scale(0.9);
+          }
+        }
+      }
+
+      .hero_img {
+        width: 100%;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
     }
   }
 }
